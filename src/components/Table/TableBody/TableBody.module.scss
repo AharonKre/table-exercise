@@ -1,0 +1,28 @@
+.tableBody {
+  display: contents;
+  tr {
+    display: contents;
+    &:hover {
+      td {
+        background-color: #f8f6ff;
+      }
+    }
+    &.selectedRow {
+      td {
+        background-color: #e5e2ed;
+      }
+    }
+  }
+  td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: white;
+    text-align: left;
+    .row-checkbox {
+      cursor: pointer;
+    }
+  }
+}

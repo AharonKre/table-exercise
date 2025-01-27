@@ -1,0 +1,21 @@
+.tableHead {
+  display: contents;
+  tr {
+    display: contents;
+  }
+
+  th,
+  td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #d9d9d9;
+    background-color: white;
+    text-align: left;
+  }
+
+  th {
+    position: sticky;
+  }
+}
