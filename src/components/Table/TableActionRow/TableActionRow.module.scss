@@ -1,28 +1,35 @@
 .tableActionRow {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 0 15px;
-  background-color: white;
-  border-bottom: 1px solid #d9d9d9;
-  white-space: nowrap;
-  .selectAll {
-    cursor: pointer;
-  }
-  .totalSelected {
-    margin-left: 15px;
-    margin-right: 20px;
-  }
-  button {
-    border: none;
-    background: none;
-    padding: 16px;
-    font-size: unset;
-    &:hover {
-      &:not([disabled]) {
-        cursor: pointer;
-        background-color: #f8f6ff;
-      }
-    }
-  }
+	position: sticky;
+	top: 0;
+	width: 100%;
+	padding: 0 15px;
+	background-color: white;
+	border-bottom: 1px solid #d9d9d9;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	.selectAll {
+		cursor: pointer;
+	}
+	.totalSelected {
+		margin-left: 15px;
+		margin-right: 20px;
+	}
+	button {
+		border: none;
+		background: none;
+		padding: 16px;
+		font-size: unset;
+		align-items: center;
+		display: flex;
+		&:hover {
+			&:not([disabled]) {
+				cursor: pointer;
+				background-color: #f8f6ff;
+			}
+		}
+		.btnTxt {
+			margin-left: 10px;
+		}
+	}
 }

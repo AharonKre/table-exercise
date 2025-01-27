@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { FaDownload } from 'react-icons/fa6';
 import styles from './TableActionRow.module.scss';
 
 interface TableActionRowProps {
@@ -49,7 +50,8 @@ export default function TableActionRow({
 					: 'None Selected'}
 			</span>
 			<button disabled={!totalFilesToDownload} onClick={onDownloadClicked}>
-				Download Selected
+				<FaDownload />
+				<span className={styles.btnTxt}>Download Selected</span>
 			</button>
 		</div>
 	);
